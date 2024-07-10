@@ -1,0 +1,44 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      AppControl
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-grid>
+    <ion-row>
+      <ion-col size="6">
+        <ion-card (click)="sendCommand('Nyalakan Lampu Merah')" color="danger">
+          <ion-card-header>
+            Lampu Merah
+          </ion-card-header>
+        </ion-card>
+      </ion-col>
+      <ion-col size="6">
+        <ion-card (click)="sendCommand('Nyalakan Lampu Hijau')" color="success">
+          <ion-card-header>
+            Lampu Hijau
+          </ion-card-header>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col size="6">
+        <ion-card (click)="sendCommand('Nyalakan Lampu Biru')" color="primary">
+          <ion-card-header>
+            Lampu Biru
+          </ion-card-header>
+        </ion-card>
+      </ion-col>
+      <ion-col size="6">
+        <ion-card (click)="sendCommand('Matikan Lampu')" color="medium">
+          <ion-card-header>
+            Matikan Lampu
+          </ion-card-header>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>
